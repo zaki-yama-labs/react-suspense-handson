@@ -1,6 +1,4 @@
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+import { sleep } from "../utils/sleep";
 
 export const AlwaysSuspend: React.FC = () => {
   console.log("AlwaysSuspend is rendered");

@@ -1,6 +1,4 @@
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+import { sleep } from "../utils/sleep";
 
 export const SometimesSuspend: React.FC = () => {
   if (Math.random() < 0.5) {
